@@ -116,3 +116,26 @@ footer {
   padding: 20px 0;
   margin-top: 40px;
 }
+/* セクション全体に箱スタイルを追加 */
+section.container {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  margin: 40px auto;
+}
+
+/* タイトル強調 */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #0f172a;
+  border-left: 6px solid #38bdf8;
+  padding-left: 12px;
+}
+
+/* 背景を薄いグレーに統一（全体） */
+body {
+  background-color: #f1f5f9;
+}
