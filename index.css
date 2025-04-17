@@ -1,117 +1,145 @@
-/* Reset & Base */
+/* リセット */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
   color: #333;
-  line-height: 1.6;
-  background: #fdfdfd;
-}
-.container {
-  width: 90%;
-  max-width: 960px;
-  margin: auto;
-  padding: 40px 0;
 }
 
-/* Header */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ヘッダー */
 header {
-  background: #ffffff;
-  border-bottom: 1px solid #eee;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+header h1 {
+  text-align: center;
 }
+
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
+
 nav a {
+  color: #fff;
   text-decoration: none;
-  color: #333;
   font-weight: bold;
 }
 
-/* Hero */
+/* ヒーローセクション */
 #hero {
-  background: #f4f4f4;
-  padding: 80px 0;
+  background-color: #555;
+  color: #fff;
   text-align: center;
-}
-#hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  padding: 60px 0;
 }
 
-/* Sections */
+#hero h2 {
+  font-size: 2.5rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+}
+
+/* セクション */
+section {
+  margin: 40px 0;
+}
+
 section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-/* Works */
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-.work-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.work-item h3 {
-  margin-top: 10px;
+section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-/* Skills */
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+/* スキルリスト */
+ul {
   list-style: none;
-}
-.skills-list li {
-  background: #e0e0e0;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding-left: 20px;
 }
 
-/* Contact Form */
+ul li {
+  margin-bottom: 10px;
+}
+
+/* プロジェクトリスト */
+.project-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  font-size: 1.1rem;
+}
+
+/* フォーム */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 input, textarea {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 button {
-  background: #333;
-  color: #fff;
   padding: 10px;
+  background-color: #333;
+  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
+
 button:hover {
-  background: #555;
+  background-color: #555;
 }
 
-/* Footer */
+/* フッター */
 footer {
-  background: #f4f4f4;
+  background-color: #333;
+  color: #fff;
   text-align: center;
   padding: 20px 0;
-  font-size: 0.9rem;
 }
+
 
